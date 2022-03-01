@@ -1,28 +1,22 @@
 // Line Chart for Orders
-const ctx = document.getElementById('myAreaChart').getContext('2d');
-const ordersChart = new Chart(ctx, {
+const ctx = document.getElementById('myBarChart').getContext('2d');
+const myBarChart= new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['June', 'July', 'August', 'September', 'October'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Women',
+            data: [5000, 4000, 3000, 2000, 1000],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
+                '#CAD2C5',
+                '#CAD2C5',
+                '#77aca2',
+                '#9dbebb',
+                '#77aca2',
                 'rgba(153, 102, 255, 0.2)',
                 'rgba(255, 159, 64, 0.2)'
             ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
+           
             borderWidth: 1
         }]
     },
@@ -36,29 +30,21 @@ const ordersChart = new Chart(ctx, {
 });
 
 // Bar Chart for Visitor
-const visitorChart  = document.getElementById('myBarChart').getContext('2d');
-const myBarChart  = new Chart(visitorChart, {
+const visitorChart  = document.getElementById('myAreaChart').getContext('2d');
+const ordersChart   = new Chart(visitorChart, {
     type: 'line',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Aug1', 'Aug3', 'Aug5', 'Aug7', 'Aug9', 'Aug11','Aug13'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: 'Month',
+            data: [5000, 4000, 3000, 2000, 1000],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                '#77aca2',
+                '#CAD2C5',
+                '#e3d5ca',
+                '#CAD2C5',
+                '#CAD2C5',
+                '#c9ada7)'
             ],
             borderWidth: 1
         }]
@@ -71,33 +57,25 @@ const myBarChart  = new Chart(visitorChart, {
         }
     }
 });
-
+// 468189
 // Liner Chart for Cities
 const citiesChart  = document.getElementById('myPieChart').getContext('2d');
 const myPieChart  = new Chart(citiesChart, {
     type: 'doughnut',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Riyadh', 'Jeddah', 'Dammam', 'Macca'],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [3, 5, 2, 3],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
+                '#edede9',
+                '#CAD2C5',
+                '#9dbebb',
+                '#CAD2C5',
+                '#edede9'
+              ],
+              hoverOffset: 2
+          
         }]
     },
     options: {
@@ -113,26 +91,18 @@ var ratChart = document.getElementById("myLinearChart").getContext('2d');
 const myLinearChart  = new Chart(ratChart, {
     type: 'radar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Month',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                '#CAD2C5',
+                '#CAD2C5',
+                '#9dbebb',
+                '#CAD2C5',
+                '#CAD2C5'
             ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
+          
             borderWidth: 1
         }]
     },

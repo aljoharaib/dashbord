@@ -1,11 +1,16 @@
 .bg-purple {
     color: white!important;
-    background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
+    background: linear-gradient( #548687, rgb(84, 134, 135))!important;
   }
-  
+ 
   .bg-pink {
-    border-color: #da4167!important;
-    background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+    border-color: #9dbebb!important;
+    background: linear-gradient(#9dbebb,  rgba(157, 190, 187) 100%)!important;
+    color: white!important;
+  }
+  .bg-brown{
+    border-color: #CAD2C5!important;
+    background: linear-gradient(#CAD2C5,  rgba(202, 210, 197) 100%)!important;
     color: white!important;
   }
   .bg-gray {
@@ -28,3 +33,5 @@
     margin-bottom: 3!important;
    
   }
+  
+  
