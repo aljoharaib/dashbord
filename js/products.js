@@ -72,13 +72,19 @@ const products = [
   },
 ];
 document.getElementById('test1').innerHTML =  products.map(user => 
-  `<div class="card   mt-3   fs-5 text-center col-5">
-  <img src="${user.image}">
-    <div> ${user.name}</div>
-    <div> ${user.description}</div>
-    <div>${user.price}</div>
-    <a href="products.html">${user.status}</a>
-    <button type="button" class="btn btn-primary bg-purple">Details</button>
-    <button type="button" class="btn btn-primary mt-3 mb-3 bg-pink ">Delete</button>
-  </div>`
+  `
+  <div class="card mt-3 mb-3 style="max-width: 540px;"" >
+  <div class="row  g-0">
+  <div class="col-md-4 "> <img class="img-fluid rounded-start" alt="..." src="${user.image}"></div>
+  <div class="col-md-8 "><h5>${user.name}</h5>
+  <div class="card-body fs-5 "> ${user.description}</div>
+  <div class="card-title align-items-end"><h5>${user.price}</h5>
+  <a class="card-text fs-5" href="products.html">${user.status}</a>
+  <button type="button" class="btn btn-primary bg-purple btn-lg d-grid gap-2 col-6 mx-auto">Details</button>
+  <button type="button" class="btn btn-primary mt-3 mb-3 bg-pink btn-lg d-grid gap-2 col-6 mx-auto">Delete</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  `
 ).join('')
